@@ -1,0 +1,32 @@
+<!--
+  Generated template for the FormularioPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Formulario</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="irForma()">
+    <ion-item>
+        <ion-input type="text" [(ngModel)]="persona.num_identificacion" name="num_identificacion" placeholder="No de Identificacion"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input type="text" [(ngModel)]="persona.nombre" name="nombre" placeholder="Nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input type="text" [(ngModel)]="persona.direccion" name="direccion" placeholder="Direccion de persona"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input type="text" [(ngModel)]="persona.telefono" name="telefono" placeholder="telefono persona"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Enviar</button>
+</form> 
+</ion-content>

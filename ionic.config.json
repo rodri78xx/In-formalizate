@@ -1,0 +1,7 @@
+{
+  "name": "In_formalizate",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
